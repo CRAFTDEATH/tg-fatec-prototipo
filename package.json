@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "froala-editor": "^4.0.13",
+    "simple-datatables": "^3.2.0"
+  }
+}

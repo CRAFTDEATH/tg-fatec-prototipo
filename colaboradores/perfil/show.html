@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="../../assets/plugins/bar-rating/css/fontawesome-stars.css">
+    <script src="https://kit.fontawesome.com/149e6ebcdd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../assets/plugins/bar-rating/js/jquery.barrating.min.js"></script>
+    <link href="../../node_modules/simple-datatables/dist/style.css" rel="stylesheet" type="text/css">
+    <title>Hello, world!</title>
+    <script>
+        $(document).ready(function () {
+            $('.avaliation').barrating({
+                theme: 'fontawesome-stars',
+                readonly: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#487eb0;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/logotipo/logo.png" alt="" width="50">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../anuncio/index.html">Anuncio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../orcamento/index.html">Orçamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../avaliacoes/index.html">Avaliações</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex justify-content-start align-items-center mb-2 mb-lg-0 ">
+                        <a class="text-white pe-4" aria-current="page" href="#">
+                            <i class="bi bi-bell-fill position-relative">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                </span>
+                            </i>
+                        </a>
+                        <a class="text-white pe-4" href="../perfil/show.html">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                style="width: 37px;" alt="Avatar" />
+                        </a>
+                        <a class="text-white pe-4" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-2">
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <div class="col-10 mt-3 ms-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row ms-2">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                            class="rounded-circle" style="width: 85px;" alt="Avatar" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col br-wrapper br-theme-fontawesome-stars">
+                                        <select class="avaliation">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5" selected>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h5>Luiz Pereira Silva</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed text-success" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <i class="bi bi-patch-check me-2"></i> Avaliações
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="card">
+                                            <div class="card card-body">
+                                                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                                    class="rounded-circle" style="width: 37px;" alt="Avatar" />
+                                                Joao Silva
+                                                <div class="br-wrapper br-theme-fontawesome-stars">
+                                                    <select class="avaliation">
+                                                        <option value="1">1</option>
+                                                        <option value="2" selected>2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                                <br>
+                                                <div class="col-1">
+                                                    <a href="" class="btn btn-danger">
+                                                        <i class="fa-solid fa-thumbs-down"></i>
+                                                    </a>
+                                                </div>
+                                                <br>
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <p> Não gostei da cantoria</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card card-body">
+                                                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                                        class="rounded-circle" style="width: 37px;" alt="Avatar" />
+                                                    Joao Silva
+                                                    <div class="br-wrapper br-theme-fontawesome-stars">
+                                                        <select class="avaliation">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5" selected>5</option>
+                                                        </select>
+                                                    </div>
+                                                    <br>
+                                                    <div class="col-1">
+                                                        <a href="" class="btn btn-success">
+                                                            <i class="fa-solid fa-thumbs-up"></i>
+                                                        </a>
+                                                    </div>
+                                                    <br>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p> Muito bom serviço chegava na hora</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card card-body">
+                                                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                                            class="rounded-circle" style="width: 37px;" alt="Avatar" />
+                                                        Joao Silva
+                                                        <div class="br-wrapper br-theme-fontawesome-stars">
+                                                            <select class="avaliation">
+                                                                <option value="1" selected>1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+                                                        <br>
+                                                        <div class="col-1">
+                                                            <a href="" class="btn btn-danger">
+                                                                <i class="fa-solid fa-thumbs-down"></i>
+                                                            </a>
+                                                        </div>
+                                                        <br>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <p> Muito mal educado</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card card-body">
+                                                        <nav class="d-flex justify-content-center"
+                                                            aria-label="Page navigation example">
+                                                            <ul class="pagination">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true">&laquo;</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">1</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">3</a>
+                                                                </li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">&raquo;</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="form-label"><b>Cpf</b></label>
+                                    <br>
+                                    <small>213.025.158.58</small>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label"><b>Telefone</b></label>
+                                    <br>
+                                    <small>(14) 99714-5788</small>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label"><b>E-mail</b></label>
+                                    <br>
+                                    <small>luiz@hotmail.com</small>
+                                </div>
+                            </div>
+                            <br>
+                            <h5 class="display">Endereço</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="form-label"><b>Cep</b></label>
+                                    <br>
+                                    <small>19982-156</small>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label"><b>Estado</b></label>
+                                    <br>
+                                    <small>SP</small>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label"><b>Cidade</b></label>
+                                    <br>
+                                    <small>Ourinhos</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="form-label"><b>Rua</b></label>
+                                    <br>
+                                    <small>Carlos Anchieta</small>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label"><b>Bairro</b></label>
+                                    <br>
+                                    <small>Luiz Soares</small>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label"><b>Numero da casa</b></label>
+                                    <br>
+                                    <small>1252</small>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="form-label"><b>Complemento</b></label>
+                                    <br>
+                                    <small>Casa da dona maria</small>
+                                </div>
+                            </div>
+
+
+                            <br>
+                            <a href="./edit.html" class="btn btn text-white" style="background-color:#487eb0;">
+                                Editar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

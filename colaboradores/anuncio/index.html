@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/plugins/bar-rating/css/fontawesome-stars.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../../assets/plugins/bar-rating/js/jquery.barrating.min.js"></script>
+    <script src="https://kit.fontawesome.com/149e6ebcdd.js" crossorigin="anonymous"></script>
+    
+    <title>Hello, world!</title>
+<script>
+		(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+	</script>
+    <script>
+         $(document).ready(function () {
+            $('.avaliation').barrating({
+                theme: 'fontawesome-stars',
+                readonly: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#487eb0;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/logotipo/logo.png" alt="" width="50">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Anuncio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../orcamento/index.html">Orçamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../avaliacoes/index.html">Avaliações</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex justify-content-start align-items-center mb-2 mb-lg-0 ">
+                        <a class="text-white pe-4" aria-current="page" href="#">
+                            <i class="bi bi-bell-fill position-relative">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                </span>
+                            </i>
+                        </a>
+                        <a class="text-white pe-4" href="../perfil/show.html">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                style="width: 37px;" alt="Avatar" />
+                        </a>
+                        <a class="text-white pe-4" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-2">
+        <div class="row">
+            <div class="col-1 mt-3 ms-4"></div>
+                <div class="col-lg-1 col-sm-3 mt-3 ms-4 ">
+                    <a href="./create.html" class="btn text-white" style="background-color:#487eb0;"><i class="bi bi-plus me-2" style="font-size:18px;"></i>Novo</a>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-1 mt-3 ms-4">
+                <a type="button" class="btn border border-primary text-primary" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas" aria-expanded="false"> <i class="bi bi-funnel"></i></a>
+            </div>
+            <div class="col-8 mt-3 ms-4">
+                <input class="form-control" name="pesquisa" placeholder="Digite o que esta procurando aqui" type="search">
+            </div>
+            <div class="col-lg-2 col-sm-3 mt-3 ms-4 d-flex align-items-center">
+                <button class="btn btn-danger"><i class="bi bi-search me-2"></i>Pesquisar</button>
+            </div>
+                
+        </div>
+       
+       
+        
+        <div class="row">
+            <div class="col-lg-1 col-0 mt-3 ms-4"></div>
+            <div class="col-lg-8 col-10 mt-3 ms-4">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                        style="width: 37px;" alt="Avatar" />
+                        Luiz Silva Russo
+
+                        
+                        <div class="br-wrapper br-theme-fontawesome-stars">
+                            <select class="avaliation"> <!-- now hidden -->
+                              <option value="1">1</option>
+                              <option value="2" selected>2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                            
+                        </div>
+                          
+
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Serviço de reboco de paredes</h5>
+                      <p class="card-text">
+                        Estou atendendendo na região de ourinhos como pedreiro a 10 anos trabalho sozinho
+                        como autonomo e estou atendendo pequenbos serviços de reboco de paredes como casas,
+                        predio ou condominio.
+                        <br>
+                        
+                        Forma pagamento: Dinheiro, Pix, Criptomoedas.
+                        
+                      </p>
+                      <a href="./show.html" class="btn text-white" style="background-color:#487eb0;">Detalhes</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Publicado: 07/07/2022
+                    </div>
+                  </div>
+            </div>
+        </div>
+       
+       
+        <!--Offcanvas-->
+        <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" style="background-color:#487eb0;">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">Filtro</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Categorias</h3>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Alvenaria
+                    </label>
+                    <input class="form-check-input" type="checkbox">
+                    <span class="badge rounded-pill bg-danger ms-2">
+                        200
+                    </span>
+                    </input>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Chapisco
+                    </label>
+                    <input class="form-check-input" type="checkbox">
+                    <span class="badge rounded-pill bg-danger ms-2">
+                        200
+                    </span>
+                    </input>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Emboço
+                    </label>
+                    <input class="form-check-input" type="checkbox">
+                    <span class="badge rounded-pill bg-danger ms-2">
+                        200
+                    </span>
+                    </input>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Reboco
+                    </label>
+                    <input class="form-check-input" type="checkbox">
+                    <span class="badge rounded-pill bg-danger ms-2">
+                        200
+                    </span>
+                    </input>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Concretagem de pisos
+                    </label>
+                    <input class="form-check-input" type="checkbox">
+                    <span class="badge rounded-pill bg-danger ms-2">
+                        200
+                    </span>
+                    </input>
+
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Lajes
+                    </label>
+                    <input class="form-check-input" type="checkbox">
+                    <span class="badge rounded-pill bg-danger ms-2">
+                        200
+                    </span>
+                    </input>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pilares e vigas
+                    </label>
+                    <input class="form-check-input" type="checkbox">
+                    <span class="badge rounded-pill bg-danger ms-2">
+                        200
+                    </span>
+                    </input>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Outros
+                    </label>
+                    <input class="form-check-input" type="checkbox">
+                    <span class="badge rounded-pill bg-danger ms-2">
+                        200
+                    </span>
+                    </input>
+                </div>
+                <br>
+                <h6>
+                    Total por categoria:
+                    <span class="badge rounded-pill bg-danger ms-2">
+                        1600
+                    </span>
+                </h6>
+                <br>
+                <button class="btn btn-outline-light">Aplicar </button>
+            </div>
+        </div>
+    </main>
+	
+    <footer>
+
+    </footer>
+</body>
+
+</html>
